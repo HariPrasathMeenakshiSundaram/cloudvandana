@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="outer-form">
+    <h3 class="heading">SURVEY-FORM</h3>
+    <div class="inner-form">
+    <form id="surveyForm">
+        <div class="form-container">
+            <div class="layout1">
+            <label for="First Name" class="label-style">First Name</label>
+            <input type="text" name="First Name" class="input-left" placeholder="firstname"  required >
+        </div>
+        <div>
+            <label for="Last Name" class="label-style">Last Name</label>
+            <input type="text"  name="Last Name"class="input-right" placeholder="lastname" required>
+        </div>
+        </div>
+        <div class="form-container">
+            <div class="layout2">
+            <label for="Date of birth" class="label-style">Date of Birth</label>
+            <input type="date"class="input-left" name="Date of birth" required>
+        </div>
+        <div class="form-container">
+                <label for="country" class="label-style">Country</label>
+                <select>
+                <option>India</option>
+                <option>USA</option>
+                <option>UK</option>
+                <option>Australia</option>
+                <option>Europe</option>
+            </select>
+        </div>
+        </div><br>
+        <div class="form-container">
+            <div class="layout3">
+                <label for="gender" class="label-style">Gender</label>
+                <input type="checkbox" class="checkbox" name="choice">Male
+                <input type="checkbox" class="checkbox" name="choice">Female
+        </div>
+        <div class="form-container">
+            <label for="profession" class="label-style">Profession</label>
+            <input type="text"class="input-right" name="profession"placeholder="profession" required>
+        </div>
+           </div>
+        <div class="form-container">
+            <div class="layout4">
+            <label for="email" class="label-style">Email</label>
+            <input type="email"class="input-left"  name="email" placeholder="abc@gmail.com" required>
+        </div>
+        <div class="form-container">
+            <label for="mobile-number" class="label-style" placeholder="required">Mobile Number</label>
+            <input type="text"class="input-right" name="mobile-number" placeholder="000000000" required>
+        </div>
+        </div>
+        <div class="form-container">
+            <button class="btn1" onclick="submitForm()">SUBMIT</button>
+            <button class="btn2" >RESET</button>
+        </div>
+    </form>
+    </div>
+    
+</div> 
+</body>
+</html>
